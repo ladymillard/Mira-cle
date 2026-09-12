@@ -185,3 +185,44 @@ code{font-family:var(--mono);font-size:.9em;background:var(--panel-2);border:1px
   .btn-row .btn{width:100%}
   .foot-in{flex-direction:column;align-items:flex-start;gap:12px}
 }
+
+/* ── tables ── */
+.tbl{width:100%;border-collapse:collapse;margin-top:18px;font-size:14.5px}
+.tbl th,.tbl td{text-align:left;padding:13px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl th{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);font-weight:600}
+.tbl td{color:var(--muted)}
+.tbl td strong{color:var(--text);font-weight:600}
+.tbl-wrap{overflow-x:auto}
+
+/* ── the walkthrough ── */
+.track{list-style:none;display:grid;gap:0;margin-top:22px;border-left:2px solid var(--line);padding-left:0}
+.track li{position:relative;padding:0 0 26px 26px}
+.track li:last-child{padding-bottom:0}
+.track li::before{
+  content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;
+  background:var(--ink);border:2px solid var(--gold);
+}
+.track .when{
+  font-family:var(--mono);font-size:11.5px;font-weight:700;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--gold);display:block;margin-bottom:3px;
+}
+.track p{font-size:14.5px;margin:0}
+
+/* ── ways to win ── */
+.ways{display:grid;gap:18px;grid-template-columns:repeat(3,1fr);margin-top:8px}
+@media(max-width:720px){.ways{grid-template-columns:1fr}}
+.way{background:var(--panel);border:1px solid var(--line);border-radius:var(--r-lg);padding:22px}
+.way .tag{
+  font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--bloom);display:block;margin-bottom:9px;
+}
+.way h3{margin-bottom:6px}
+.way p{font-size:14px}
+
+/* ── not-this list ── */
+.nots{list-style:none;display:grid;gap:11px;margin-top:6px}
+.nots li{display:flex;gap:11px;font-size:15px;color:var(--muted);line-height:1.55}
+.nots li::before{content:"✕";color:var(--dim);font-weight:700;flex:none}
+.nots li strong{color:var(--text);font-weight:600}
+
+.center{text-align:center}

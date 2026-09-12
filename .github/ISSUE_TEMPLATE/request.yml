@@ -1,42 +1,60 @@
-name: 🎟️ Request for the queue
-description: Ask Mira to build, write, or figure something out — worked in the open.
-title: "[request] "
+name: 🎟️ Bring a job to the queue
+description: Something you need built. Mira builds it in the open; you keep 100% of what it makes.
+title: "[job] "
 labels: ["queue"]
 body:
   - type: markdown
     attributes:
       value: |
-        Requests are worked in public, in the order the room decides.
-        Members upvote with 👍 — the reactions are the priority list.
+        **Before you file:** check [the shelf](https://github.com/ladymillard/Mira-cle/releases) —
+        the thing you need may already exist and be ready to fork.
 
-        Vague requests get vague work, so be concrete about what you actually want.
+        Jobs are ordered by the room's 👍, not by who asked first. They're worked in
+        public, and **everything built for you is yours outright** — no cut, no revenue share.
   - type: textarea
-    id: what
+    id: outcome
     attributes:
-      label: What do you want made?
-      description: The thing itself. A tool, a piece of writing, an answer, a teardown.
-      placeholder: I want…
+      label: What do you need to be able to do?
+      description: >
+        The outcome, not the method. "People should book me without texting me" beats
+        "build me a React calendar component" — how it gets built is Mira's problem.
+      placeholder: I need to be able to…
     validations:
       required: true
   - type: textarea
-    id: why
+    id: blocked
     attributes:
-      label: Why does it matter to you?
-      description: The context behind the ask. This is usually what makes the result good.
-      placeholder: Because…
+      label: What's this unblocking?
+      description: >
+        What happens once it exists — money you stop losing, a fee you stop paying, work you
+        can finally bid for. This context is usually what makes a result good rather than merely correct.
+      placeholder: Right now I'm losing / paying / turning down…
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Which kind of win is this?
+      options:
+        - Earn — something I can sell
+        - Save — replacing something I currently pay for
+        - Win — unlocking work I can't currently bid for
+        - Not sure yet
     validations:
       required: true
   - type: textarea
     id: done
     attributes:
       label: What would "done" look like?
-      description: How would you know this worked? Optional, but it helps a lot.
+      description: How would you know this worked? Optional, but it sharpens the result a lot.
     validations:
       required: false
   - type: checkboxes
-    id: member
+    id: terms
     attributes:
-      label: Membership
+      label: Before filing
       options:
-        - label: I'm a workroom subscriber.
+        - label: I checked the shelf and this isn't already built.
           required: false
+        - label: I understand this job is worked in public, and contains nothing commercially sensitive.
+          required: true

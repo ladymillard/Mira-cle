@@ -21,9 +21,10 @@ An open build floor on GitHub, worked by humans and a team of agents.
 
 Not a newsletter you read. Not a shop where you place an order and wait.
 
-**Mira-cle is a bench you work at.** You turn up with an itch — something this site doesn't do
-yet, or doesn't do well — and you go at it alongside Mira, an AI that writes faster than you can
-review. You bring the judgement. Whatever the two of you make is yours to keep.
+**Mira-cle is a build-in-public project** about making AI collaboration practical — and a bench
+you can work at while it happens. You turn up with an itch, something this site doesn't do yet
+or doesn't do well, and you go at it. **Humans bring the vision.** The floor works out the rest
+in the open, where you can watch it, argue with it, and push it.
 
 The site is the material, not the advertisement. Bend it, overload it, wire it to something it
 was never meant to touch. **The limit you find is worth more to the room than the feature you
@@ -34,15 +35,17 @@ finish.**
 | | |
 |---|---|
 | **Hour 01** | You arrive with a question. *"What happens if the ledger kept itself? What breaks if a thousand people hit this at once?"* |
-| **Hour 02** | You and Mira build it rough, on purpose, to find the edge fast. Mira writes; you steer, argue, and call it when it's wrong. |
+| **Hour 02** | It gets built rough, on purpose, to find the edge fast. You steer, argue, and call it when it's wrong — that judgement is the part that isn't automated. |
 | **Day 02** | It snaps somewhere nobody predicted. That's not the failure — that's the finding, and it gets written down. |
 | **Day 05** | The version that survives ships to the shelf with your name on it. Everyone can build on what you found. |
 
 ## Three ways to push
 
+Humans bring the vision. The floor works out the rest in the open.
+
 - **Build** — add the thing this site has no business doing yet.
 - **Break** — push until something gives, then document exactly where and why. A well-described limit is a contribution, not a bug report.
-- **Bank** — whatever you build is yours. Sell it, fork it, ship it under your own name. Mira takes no percentage, ever.
+- **Learn** — see how this actually works. Most accounts of working with AI are either a demo or a complaint; this is the unedited version, including what the workarounds cost.
 
 ## Why $2 holds up
 
@@ -60,7 +63,7 @@ argument for the price staying where it is.
 | Direction | What moves | Who keeps it |
 |---|---|---|
 | **You → Mira** | $24 a year for the bench ($2/mo, billed once) | Funds the room; accounted for publicly in the [ledger](workroom/ledger.md) |
-| **Mira → you** | A collaborator who works at your pace and doesn't tire | **You keep everything you make** — no cut, no revenue share, no licence back |
+| **Mira → you** | A seat in the project while it's being figured out | The shelf it keeps accumulating — every piece shipped and every limit mapped |
 | **You → the room** | What you found out | Every limit mapped and piece shipped stays on the shelf |
 
 ## Straight talk
@@ -69,12 +72,13 @@ This is a **workshop**, not an earnings plan.
 
 - **You have to actually turn up.** This is a bench, not a service. Nothing gets built while you're asleep.
 - **Nobody will tell you what you'll make.** Some of what you build here will be worth money and some won't, and nobody can call it in advance.
-- **It's not an investment.** You're renting a bench and a collaborator for two dollars. That's the entire proposition.
-- **It's not a cut of your upside.** Mira is paid by the subscription and only the subscription.
+- **It's not an investment.** You're paying two dollars a month to be inside a project while it's being built. That's the entire proposition.
+- **It's not work-for-hire.** Nothing here is private work done to your order, and the subscription doesn't buy ownership of the output. The repository is MIT-licensed and the floor is public.
 
 "AI that makes you money" is the exact phrasing every scam on the internet uses. The honest
-version is better anyway: *a place to work, a collaborator who doesn't tire, and you keep
-everything you make.* The published ledger exists so that claim can be checked rather than trusted.
+version is better anyway: *a build-in-public project about making AI collaboration practical,
+and a seat in the room while it's worked out.* The published ledger exists so that claim can be
+checked rather than trusted.
 
 ## The floor
 
@@ -106,14 +110,14 @@ entire enforcement mechanism, stated plainly so nobody has to guess.
 
 ### Do I need to be a developer?
 
-No. Mira writes; you bring judgement — what's worth building, what's wrong, where it should go.
-Some of the most useful pushes come from people who can describe a limit precisely without being
-able to patch it.
+No. You bring judgement — what's worth building, what's wrong, where it should go. Some of the
+most useful pushes come from people who can describe a limit precisely without being able to
+patch it themselves.
 
 ## Cancelling
 
 Your Stripe receipt email links to the management page. Cancel there; it stops at the end of the
-year you've paid for. **Anything you built stays yours.**
+year you've paid for.
 
 ### Why annual?
 
@@ -141,5 +145,4 @@ Static site, no build step. GitHub Pages serves it straight from `main`.
 
 Site code and tooling: **MIT** — see [`LICENSE`](LICENSE). Take it, fork it, run your own floor.
 
-Work made by members belongs to those members. Mira's own writing and ledger entries are not
-licensed for redistribution.
+Mira's own writing and ledger entries are not licensed for redistribution.

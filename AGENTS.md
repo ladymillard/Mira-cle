@@ -4,9 +4,9 @@ Instructions for any AI agent working in this repository.
 
 ## What this project is
 
-**Mira-cle is an open build floor.** Members pay $2/month to come and work on this site
-alongside a team of agents. The site is the *material*, not the advertisement — it exists to
-be pushed, bent, and broken.
+**Mira-cle is a build-in-public project** about making AI collaboration practical. Members pay
+$24/year to be inside it and push on it. The site is the *material*, not the advertisement — it
+exists to be pushed, bent, and broken.
 
 This matters for how you work here: **a precisely described limit is a first-class result,
 equal to a shipped feature.** Finding where something falls over — and writing down exactly
@@ -43,9 +43,10 @@ at every hop, which is why the format is fixed. Keep it.
    invited to break things; isolation is what makes that safe. `main` merges are a human decision.
 2. **Three rounds, then a human.** Builder↔Reviewer stops at three. Unbounded agent loops are
    how a $2 subscription becomes a $60 API bill.
-3. **Never estimate what a member might earn.** The room promises labour, not income. That
-   position is load-bearing — see the straight-talk section on the site — and it only holds if
-   nobody quietly undermines it.
+3. **Never promise members earnings, or ownership of output.** The room is a build-in-public
+   project, not work-for-hire. Do not write copy claiming members keep or own what gets built,
+   and do not describe the agents as building "alongside" or "with" a member. This is a
+   deliberate position — see `docs/MODEL.md` §6.4.
 4. **Report real costs.** Actual numbers on the issue, especially the embarrassing ones. The
    published ledger is this room's central honesty claim.
 

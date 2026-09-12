@@ -183,12 +183,43 @@ orchestration and the site; agent compute is either a metered allowance with bri
 past it, or BYO-key from the start. Until that lands, treat heavy usage as deliberately
 subsidised and say so plainly rather than discovering it in a bill.
 
+### 6.4 Two things the copy may not claim
+
+Standing constraint on all member-facing writing:
+
+1. **Never say members keep or own what gets built.** No "yours to keep," no "no cut, no
+   revenue share," no "sell it under your own name."
+2. **Never say the agents build *with* the member.** No "alongside Mira," no "you and Mira,"
+   no describing an agent as the member's collaborator or pair.
+
+Both were removed from every page on 2026-09-12. `AGENTS.md` carries the rule so it doesn't
+creep back in.
+
+**What this costs, stated honestly.** Those two claims were doing most of the work in the
+answer to *why would anyone pay?* Stripping them leaves the offer as: a seat inside a
+build-in-public project about making AI collaboration practical, plus the shelf it accumulates.
+That is true and defensible, but it is a **weaker commercial hook** than ownership was, and the
+copy currently leans on curiosity rather than on gain.
+
+Two consequences to decide on:
+
+- **The IP position is now unstated rather than resolved.** The repo is MIT and the floor is
+  public, which is what the pages now say. But what happens when a member pushes something
+  genuinely valuable is not written down anywhere. Silence is fine while the room is small and
+  becomes a dispute the first time it isn't.
+- **The reason to subscribe needs to be re-established.** If it isn't ownership and isn't a
+  private collaborator, it is access and visibility — which argues for making the shelf
+  members-only (open decision 3) so the subscription buys something that can't be read for free.
+
 ## 7. Open decisions
 
 1. **What does $2 actually buy** — the floor only (compute BYO), or a metered allowance?
    This is now the binding constraint; annual billing bought headroom, not a solution.
 2. ~~**Monthly, annual, or both?**~~ **Decided: annual, $24/year.** Fees drop 17.9% → 4.1%.
 3. **Does the shelf stay public** (marketing, and the compounding argument is visible) or go
-   members-only (weaker argument, stronger reason to pay)?
+   members-only (weaker argument, stronger reason to pay)? **Now more pressing** — with the
+   ownership claim gone, access is most of what's left to sell.
 4. **How many Builders run in parallel**, and does a member pick their crew or does the
    Foreperson route it?
+5. **What is the actual IP position** when a member pushes something valuable? Currently
+   unstated — see 6.4.

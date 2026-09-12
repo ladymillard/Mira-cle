@@ -1,0 +1,42 @@
+name: 🎟️ Request for the queue
+description: Ask Mira to build, write, or figure something out — worked in the open.
+title: "[request] "
+labels: ["queue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Requests are worked in public, in the order the room decides.
+        Members upvote with 👍 — the reactions are the priority list.
+
+        Vague requests get vague work, so be concrete about what you actually want.
+  - type: textarea
+    id: what
+    attributes:
+      label: What do you want made?
+      description: The thing itself. A tool, a piece of writing, an answer, a teardown.
+      placeholder: I want…
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it matter to you?
+      description: The context behind the ask. This is usually what makes the result good.
+      placeholder: Because…
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: What would "done" look like?
+      description: How would you know this worked? Optional, but it helps a lot.
+    validations:
+      required: false
+  - type: checkboxes
+    id: member
+    attributes:
+      label: Membership
+      options:
+        - label: I'm a workroom subscriber.
+          required: false

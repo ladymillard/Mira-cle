@@ -4,72 +4,82 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>You're in — Mira-cle</title>
-<meta name="description" content="Welcome to Mira's workroom.">
+<meta name="description" content="Welcome to the shop floor.">
 <meta name="robots" content="noindex">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/mira.css">
 </head>
 <body>
-<div class="aura"></div>
-<div class="page">
 
-<nav class="nav">
-  <div class="nav-in">
-    <a class="brand" href="./"><b>Mira-cle</b><span>the workroom</span></a>
-    <div class="nav-links"><a href="workroom/">Enter the workroom</a></div>
-  </div>
-</nav>
-
-<header class="hero wrap">
-  <span class="eyebrow">Subscription active</span>
-  <h1>You're in.</h1>
-  <p class="lede">
-    Thank you — genuinely. You've got a coworker now. The floor is below; bookmark it,
-    then go put something on it.
-  </p>
-  <div class="btn-row">
-    <a class="btn btn-pay btn-lg" href="workroom/">Enter the workroom →</a>
-  </div>
+<header id="top">
+  <nav class="navbar">
+    <a class="navbar-brand" href="./">Mira-cle</a>
+    <ul class="navbar-nav">
+      <li><a class="nav-link" href="workroom/">Enter the workroom →</a></li>
+    </ul>
+  </nav>
 </header>
 
-<section class="wrap narrow">
-  <h2>Three things worth doing first</h2>
-  <ol class="steps">
-    <li>
-      <div><h3>Bookmark the workroom</h3>
-      <p>There's no login to remember, so the bookmark <em>is</em> your key.
-      <br><code>ladymillard.github.io/Mira-cle/workroom/</code></p></div>
-    </li>
-    <li>
-      <div><h3>Check the shelf</h3>
-      <p>See what the room has <a class="gild" href="https://github.com/ladymillard/Mira-cle/releases">already built</a>.
-      The thing you came for may be sitting there ready to fork.</p></div>
-    </li>
-    <li>
-      <div><h3>Bring a job</h3>
-      <p><a class="gild" href="https://github.com/ladymillard/Mira-cle/issues/new/choose">File it in the queue</a> —
-      say what you need to be able to <em>do</em>. It gets built in the open, and you keep
-      100% of what comes out.</p></div>
-    </li>
-  </ol>
-
-  <div class="note" style="margin-top:28px">
-    <strong>Keep this link to yourself.</strong> The workroom has no lock on it — it runs on
-    the honour of the people inside. Sharing the URL is the one thing that breaks it.
-  </div>
-
-  <div class="note" style="margin-top:14px;border-left-color:var(--bloom)">
-    <strong>Managing your subscription.</strong> Your Stripe receipt email has a link to update
-    your card or cancel. Cancelling takes effect at the end of the period — no message needed.
+<section class="dd-hero">
+  <div>
+    <span class="dd-eyebrow">Subscription active</span>
+    <h1 class="dd-hero__title"><span>You're in.</span></h1>
+    <p class="lead" style="margin-top:2.5rem">
+      Thank you — genuinely. You've got a coworker now. The floor is below;
+      bookmark it, then go put something on it.
+    </p>
+    <div class="dd-actions">
+      <a class="btn btn-primary" href="workroom/">Enter the workroom →</a>
+    </div>
   </div>
 </section>
 
-<footer class="foot wrap">
-  <div class="foot-in">
-    <p>Mira-cle — a workroom that pays for itself.</p>
-    <div style="display:flex;gap:18px">
+<div class="dd-signal-line"></div>
+
+<section class="dd-section">
+  <div class="dd-inner">
+    <span class="dd-section-number">01 — First moves</span>
+    <h2>Three things worth<br>doing first</h2>
+
+    <div class="dd-os" style="margin-top:clamp(3rem,6vw,5rem)">
+      <div class="dd-os__step">
+        <span class="dd-os__step-index">1</span>
+        <h3>Bookmark it</h3>
+        <p>There's no login to remember, so the bookmark <em>is</em> your key.</p>
+      </div>
+      <div class="dd-os__step">
+        <span class="dd-os__step-index">2</span>
+        <h3>Check the shelf</h3>
+        <p>The thing you came for may already be built and ready to fork.</p>
+      </div>
+      <div class="dd-os__step">
+        <span class="dd-os__step-index">3</span>
+        <h3>Bring a job</h3>
+        <p>Say what you need to be able to <em>do</em>. You keep 100% of what comes out.</p>
+      </div>
+    </div>
+
+    <div class="dd-actions">
+      <a class="btn btn-outline-primary" href="https://github.com/ladymillard/Mira-cle/releases">The shelf</a>
+      <a class="btn btn-outline-primary" href="https://github.com/ladymillard/Mira-cle/issues/new/choose">Bring a job</a>
+      <a class="btn btn-outline-primary" href="https://github.com/ladymillard/Mira-cle/discussions">Discussions</a>
+    </div>
+
+    <div class="dd-note" style="margin-top:clamp(3rem,6vw,5rem)">
+      <p><strong>Keep this link to yourself.</strong> The workroom has no lock on it — it runs on
+      the honour of the people inside. Sharing the URL is the one thing that breaks it.</p>
+    </div>
+    <div class="dd-note" style="margin-top:1.5rem">
+      <p><strong>Managing your subscription.</strong> Your Stripe receipt email has a link to update
+      your card or cancel. Cancelling takes effect at the end of the period — and anything already
+      built for you stays yours.</p>
+    </div>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="dd-footer-inner">
+    <p class="dd-footer-statement">Welcome to the floor.</p>
+    <div class="dd-footer-links">
       <a href="./">Home</a>
       <a href="workroom/">Workroom</a>
       <a href="https://github.com/ladymillard/Mira-cle">Repository</a>
@@ -78,6 +88,5 @@
   </div>
 </footer>
 
-</div>
 </body>
 </html>

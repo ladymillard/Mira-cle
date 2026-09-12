@@ -8,7 +8,7 @@ no server, and no database.
 This is the one piece of wiring that makes the flow work, and it is done in the Stripe
 dashboard, not in this repo.
 
-1. Open the payment link `4gM3cvcLKazm1IVd2dcQU07` in the Stripe dashboard
+1. Open the payment link `dRm5kD9zyePCdrD3rDcQU08` in the Stripe dashboard
    (**Payment links → your $2/month link → Edit**).
 2. Under **After payment**, choose **Don't show confirmation page → Redirect to your website**.
 3. Set the URL to:
@@ -43,14 +43,16 @@ The workroom's "table" is GitHub Discussions. Enable it at
 
 ## Changing the price or the link
 
-The Stripe URL appears in `index.html`, `README.md`, and the badge at the top of the README.
+The Stripe URL appears in `index.html`, `welcome.html`, `workroom/index.html`, `README.md`,
+`.github/ISSUE_TEMPLATE/config.yml` and the badge at the top of the README.
 To swap it:
 
 ```bash
-grep -rl '4gM3cvcLKazm1IVd2dcQU07' . --exclude-dir=.git
+grep -rl 'dRm5kD9zyePCdrD3rDcQU08' . --exclude-dir=.git
 ```
 
-Then replace it in each file, along with any `$2` copy that would become wrong.
+Then replace it in each file, along with any `$24` / `$2 a month` copy that would become wrong.
+Remember the stylesheet version (`mira.css?v=N`) if the CSS changed too.
 
 ---
 

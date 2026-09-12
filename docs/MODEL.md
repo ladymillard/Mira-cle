@@ -157,41 +157,37 @@ So the webhook-and-database path in [`SETUP.md`](SETUP.md) stops being a "later"
 becomes a prerequisite. Stripe webhook → subscription status → the board checks it before
 dispatching any agent.
 
-### 6.3 The economics don't close
+### 6.3 The economics half-close — annual billing is now live
 
-Per member, per month:
+**Fixed as of the move to annual billing.** Per member, per year:
 
-| Line | Amount |
-|---|---|
-| Subscription | $2.00 |
-| Stripe fee (2.9% + $0.30) | **−$0.36** |
-| **Net** | **$1.64** |
+| Line | Monthly ($2 × 12) | Annual ($24 × 1) |
+|---|---|---|
+| Gross | $24.00 | $24.00 |
+| Stripe fees (2.9% + $0.30 per charge) | −$4.30 | **−$1.00** |
+| **Net to the floor** | **$19.70** | **$23.00** |
+| Effective fee rate | 17.9% | **4.1%** |
 
-**The fee is 17.9%** — micropayments are brutally taxed by per-transaction pricing.
+Twelve charges means paying the flat 30¢ twelve times. One charge pays it once. Identical price
+to the member, **$3.30 more per member per year** on the floor — and at a $2 price point that
+flat fee is the dominant cost, not the percentage.
 
-Against that $1.64, a single real coding session across six agents costs somewhere between
-$0.50 and $10 in tokens depending on models and rounds. One active member can cost more than
-ten paying members bring in. **At unlimited usage the model loses money faster the better it
-works**, which is the worst possible failure mode.
+**Still open: compute.** Annual billing fixes the payment rail, not the burn. Against $1.92 per
+member per month, a single push across six stations costs somewhere between $0.50 and $10 in
+tokens depending on models and rounds. One active member can still outcost ten paying ones, and
+**the model still loses money faster the better it works.**
 
-Two fixes, and they stack:
-
-**a) Bill annually.** $24/year charged once costs $0.99 in fees (4.1%) instead of $4.30
-(17.9%). Same price to the member, **$3.31 more per member per year** kept. This is free money
-and should happen regardless of everything else.
-
-**b) Separate the floor from the compute.** $2 funds the floor — the shelf, the board, the
-orchestration, the ledger, the site. Agent compute is either a metered monthly allowance with
-bring-your-own-key past it, or BYO-key from the start. This is the only version that survives
-the hundredth member, and it's honest: the room supplies the crew and the accumulated
-findings; you supply the fuel for your own pushes.
-
----
+The Steward exists to make this visible and stoppable, but metering is not the same as solving.
+The real fix is separating the floor from the fuel: $2/month funds the shelf, the board, the
+orchestration and the site; agent compute is either a metered allowance with bring-your-own-key
+past it, or BYO-key from the start. Until that lands, treat heavy usage as deliberately
+subsidised and say so plainly rather than discovering it in a bill.
 
 ## 7. Open decisions
 
 1. **What does $2 actually buy** — the floor only (compute BYO), or a metered allowance?
-2. **Monthly, annual, or both?** Annual is materially better on fees.
+   This is now the binding constraint; annual billing bought headroom, not a solution.
+2. ~~**Monthly, annual, or both?**~~ **Decided: annual, $24/year.** Fees drop 17.9% → 4.1%.
 3. **Does the shelf stay public** (marketing, and the compounding argument is visible) or go
    members-only (weaker argument, stronger reason to pay)?
 4. **How many Builders run in parallel**, and does a member pick their crew or does the

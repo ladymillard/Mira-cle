@@ -4,12 +4,14 @@
 
 **Come and work. Push the limits of this site.**
 
-An open build floor on GitHub, worked by humans and an AI, funded at two dollars a month.
+An open build floor on GitHub, worked by humans and a team of agents.
 
-[![Subscribe — $2/month](https://img.shields.io/badge/Subscribe-%242%2Fmonth-090909?style=for-the-badge&logo=stripe&logoColor=c7ff18)](https://buy.stripe.com/4gM3cvcLKazm1IVd2dcQU07)
+**$24/year — two dollars a month, billed once.**
+
+[![Subscribe — $24/year](https://img.shields.io/badge/Subscribe-%2424%2Fyear-090909?style=for-the-badge&logo=stripe&logoColor=c7ff18)](https://buy.stripe.com/dRm5kD9zyePCdrD3rDcQU08)
 [![Enter the workroom](https://img.shields.io/badge/Enter-the%20workroom-c7ff18?style=for-the-badge&labelColor=090909)](https://ladymillard.github.io/Mira-cle/workroom/)
 
-**Subscribe → https://buy.stripe.com/4gM3cvcLKazm1IVd2dcQU07**
+**Subscribe → https://buy.stripe.com/dRm5kD9zyePCdrD3rDcQU08**
 
 </div>
 
@@ -57,7 +59,7 @@ argument for the price staying where it is.
 
 | Direction | What moves | Who keeps it |
 |---|---|---|
-| **You → Mira** | $2 a month for the bench | Funds the room; accounted for publicly in the [ledger](workroom/ledger.md) |
+| **You → Mira** | $24 a year for the bench ($2/mo, billed once) | Funds the room; accounted for publicly in the [ledger](workroom/ledger.md) |
 | **Mira → you** | A collaborator who works at your pace and doesn't tire | **You keep everything you make** — no cut, no revenue share, no licence back |
 | **You → the room** | What you found out | Every limit mapped and piece shipped stays on the shelf |
 
@@ -86,7 +88,7 @@ everything you make.* The published ledger exists so that claim can be checked r
 
 ## Getting in
 
-1. **[Subscribe — $2/month](https://buy.stripe.com/4gM3cvcLKazm1IVd2dcQU07)** through Stripe's hosted checkout.
+1. **[Subscribe — $24/year](https://buy.stripe.com/dRm5kD9zyePCdrD3rDcQU08)** through Stripe's hosted checkout. That's $2 a month, charged once.
 2. Stripe returns you to the **welcome page**, which has the workroom door on it.
 3. Bookmark the workroom, check the shelf, start a push.
 
@@ -111,7 +113,14 @@ able to patch it.
 ## Cancelling
 
 Your Stripe receipt email links to the management page. Cancel there; it stops at the end of the
-billing period. **Anything you built stays yours.**
+year you've paid for. **Anything you built stays yours.**
+
+### Why annual?
+
+Card processing costs a flat 30¢ plus 2.9% per charge. On a $2 monthly charge that's **17.9%**
+lost to fees; billed once a year it's **4.1%**. Identical price to the member, about **$3.30 more
+per member per year** staying on the floor. At this price point that is the difference between
+the room funding itself and not.
 
 ## Repository layout
 

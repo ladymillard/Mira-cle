@@ -29,12 +29,12 @@ Posted monthly. Subscriber counts are rounded to avoid identifying anyone in a s
 
 **What the room delivered**
 
-| Jobs finished | Shelf items added | Est. market rate of labour delivered |
+| Pushes worked | Shelf items added | Limits mapped |
 |---|---|---|
 | 0 | 0 | $0 |
 
-*The last column is the point of the whole exercise: what members would have paid to have
-this work done elsewhere, against what they actually paid.*
+*A mapped limit counts the same as a shipped piece. Both raise the floor for whoever
+works here next.*
 
 **What it bought this month:**
 

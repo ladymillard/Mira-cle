@@ -1,60 +1,56 @@
-name: 🎟️ Bring a job to the queue
-description: Something you need built. Mira builds it in the open; you keep 100% of what it makes.
-title: "[job] "
-labels: ["queue"]
+name: 🔧 Start a push
+description: Something you want to build, break, or take further on this site.
+title: "[push] "
+labels: ["board"]
 body:
   - type: markdown
     attributes:
       value: |
-        **Before you file:** check [the shelf](https://github.com/ladymillard/Mira-cle/releases) —
-        the thing you need may already exist and be ready to fork.
+        **This is a build floor, not a request desk.** You're not asking for something to be
+        made for you — you're saying what you're going at, so others can join in or stay clear.
 
-        Jobs are ordered by the room's 👍, not by who asked first. They're worked in
-        public, and **everything built for you is yours outright** — no cut, no revenue share.
+        Check [the shelf](https://github.com/ladymillard/Mira-cle/releases) first: someone may
+        have already hit this wall and mapped it.
   - type: textarea
-    id: outcome
+    id: push
     attributes:
-      label: What do you need to be able to do?
-      description: >
-        The outcome, not the method. "People should book me without texting me" beats
-        "build me a React calendar component" — how it gets built is Mira's problem.
-      placeholder: I need to be able to…
-    validations:
-      required: true
-  - type: textarea
-    id: blocked
-    attributes:
-      label: What's this unblocking?
-      description: >
-        What happens once it exists — money you stop losing, a fee you stop paying, work you
-        can finally bid for. This context is usually what makes a result good rather than merely correct.
-      placeholder: Right now I'm losing / paying / turning down…
+      label: What are you pushing on?
+      description: The thing that annoys you, the feature that doesn't exist, or the limit you want to find.
+      placeholder: I want to see what happens if…
     validations:
       required: true
   - type: dropdown
     id: kind
     attributes:
-      label: Which kind of win is this?
+      label: What kind of push is this?
       options:
-        - Earn — something I can sell
-        - Save — replacing something I currently pay for
-        - Win — unlocking work I can't currently bid for
-        - Not sure yet
+        - Build — make something that isn't here yet
+        - Break — find where this falls over and document it
+        - Both — build it badly on purpose to find the edge
     validations:
       required: true
   - type: textarea
-    id: done
+    id: interesting
     attributes:
-      label: What would "done" look like?
-      description: How would you know this worked? Optional, but it sharpens the result a lot.
+      label: Why is this worth the room's time?
+      description: >
+        What would we learn? A limit that gets mapped is as valuable as a feature that ships —
+        say which one you're after.
+    validations:
+      required: true
+  - type: textarea
+    id: help
+    attributes:
+      label: Want anyone in on it?
+      description: Optional. Say if you want company, a reviewer, or to be left alone with it.
     validations:
       required: false
   - type: checkboxes
     id: terms
     attributes:
-      label: Before filing
+      label: Before you start
       options:
-        - label: I checked the shelf and this isn't already built.
+        - label: I checked the shelf and this wall isn't already mapped.
           required: false
-        - label: I understand this job is worked in public, and contains nothing commercially sensitive.
+        - label: I understand this work is public, and contains nothing commercially sensitive.
           required: true

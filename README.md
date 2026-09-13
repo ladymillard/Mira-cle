@@ -89,6 +89,7 @@ checked rather than trusted.
 | 🧰 **The shelf** | What survived — pieces shipped, limits mapped | [Releases](../../releases) |
 | 🗣️ **The table** | Argue before you build | [Discussions](../../discussions) |
 | 📓 **The ledger** | Money in, money out, what the room produced | [`workroom/ledger.md`](workroom/ledger.md) |
+| 🧯 **The breach ledger** | Access-control gaps, breach-like failures, and accepted risks | [`workroom/security-breach-ledger.md`](workroom/security-breach-ledger.md) |
 
 ## Getting in
 
@@ -134,7 +135,9 @@ the room funding itself and not.
 ├── welcome.html          # post-checkout page (Stripe success URL points here)
 ├── workroom/
 │   ├── index.html        # the build floor
-│   └── ledger.md         # monthly accounts
+│   ├── ledger.md         # monthly accounts
+│   └── security-breach-ledger.md
+│                         # access-control gaps and accepted risks
 ├── assets/mira.css       # D&D design system + structural shims
 └── docs/SETUP.md         # deploy, Stripe wiring, upgrade path
 ```

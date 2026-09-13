@@ -6,8 +6,9 @@ decisions needed to close them.
 It is deliberately public. Mira-cle asks members to push on the system, so the room needs a
 place where its weak points are named without softening them into "future work."
 
-**Current incident status:** no confirmed unauthorized access, data theft, payment fraud, or
-agent-compute abuse has been recorded in this repository.
+**Current incident status:** one user-reported incident date is now recorded:
+February 7, 2026. The ledger still needs the underlying evidence packet before it can state
+what was accessed, changed, created, or misattributed.
 
 **Current security posture:** intentionally soft door; unsafe for private material; not yet
 safe for metered agent compute.
@@ -35,6 +36,58 @@ safe for metered agent compute.
 ---
 
 ## Active Breach Ledger
+
+### SBL-000 - February 7, 2026 Incident Record Is Incomplete
+
+**Severity:** Critical  
+**Status:** Open  
+**Incident date:** 2026-02-07  
+**First recorded in this ledger:** 2026-09-13  
+**Source:** Diana's September 13, 2026 correction; related local provenance notes in
+`/Users/chaiaininja/Desktop/ChAI-Books-Orchestration/`
+
+The security ledger was originally framed around current workroom access-control gaps. Diana
+clarified that the intended security-breach ledger should center the incident on
+February 7, 2026.
+
+**Known so far:**
+
+- Diana identified February 7, 2026 as the incident date.
+- Existing local notes describe unresolved provenance around unexpected secret/hidden-agent
+  files in the ChAI source trail.
+- The strongest nearby preserved evidence currently found locally is dated February 15, 2026,
+  not February 7, 2026.
+- Those February 15 commits entered the repository under `Diana Smith <ladymillard@gmail.com>`,
+  but Diana previously said she did not know about Merkabah and would not have created secret
+  files.
+
+**Why this matters:** this is the difference between a product-risk register and an incident
+ledger. A real incident ledger needs a timeline, evidence sources, impacted systems, affected
+identities, containment actions, and unresolved questions. Without those, the record can
+accidentally minimize the incident or overstate facts that are not yet proven.
+
+**Immediate containment / preservation rule:**
+
+- Do not delete Merkabah, professor, agent-auth, wallet, command-center, or git-history
+  evidence.
+- Treat suspicious authorship, hidden-agent files, wallet traces, API-key generation,
+  ghost-account references, and removed-agent records as evidence until reviewed.
+- Do not publish private or sensitive claims from the evidence trail without Diana's explicit
+  approval.
+
+**Required evidence packet:**
+
+1. What happened on February 7, 2026.
+2. Which repo, account, device, wallet, service, or agent was involved.
+3. The first timestamped sign of compromise or unauthorized action.
+4. The exact files, commits, messages, logs, wallets, or generated keys connected to it.
+5. What changed after February 7, including the February 15 Merkabah/professor commits.
+6. Any money, identity, authorship, access, or data exposure impact.
+
+**Close condition:** the February 7 incident has a sourced timeline and each related artifact
+is classified as confirmed evidence, adjacent evidence, disproven, or still unresolved.
+
+---
 
 ### SBL-001 - Workroom Door Has No Lock
 
@@ -225,6 +278,29 @@ valuable private business ideas onto the floor.
 ---
 
 ## Incident Log
+
+### 2026-02-07 - User-Reported Security Incident
+
+**Type:** security / provenance / access-control  
+**Status:** Open  
+**Ledger item:** SBL-000  
+**Recorded in ledger:** 2026-09-13
+
+Diana clarified that the security-breach ledger should be about the incident on
+February 7, 2026, not only the current Mira-cle workroom access-control gaps.
+
+This entry is intentionally conservative until the evidence packet is assembled. It records
+the incident date, preserves the surrounding provenance trail, and prevents later security
+work from overwriting the February 7 incident with unrelated product-risk items.
+
+**Related preserved evidence currently known locally:**
+
+- `/Users/chaiaininja/Desktop/ChAI-Books-Orchestration/AGENT-TRACE-MAP.md`
+- `/Users/chaiaininja/Desktop/ChAI-Books-Orchestration/MERKABAH-DOSSIER.md`
+- `/Users/chaiaininja/Desktop/ChAI-Books-Orchestration/MERKABAH-QUARANTINE-NOTE.md`
+
+**Next action:** assemble the February 7 evidence packet and link every artifact directly from
+SBL-000.
 
 ### 2026-09-12 - Mobile Overflow Fix
 
